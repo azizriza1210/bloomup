@@ -18,3 +18,6 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('artikel', [HomeController::class, 'artikel']);
 Route::get('desease', [HomeController::class, 'desease']);
 Route::get('recomended', [HomeController::class, 'recomended']);
+Route::get('login', [AuthController::class, 'showLoginForm']);
+Route::post('login', [AuthController::class, 'login']);
+Route::get('register', [AuthController::class, 'showRegisterForm']);

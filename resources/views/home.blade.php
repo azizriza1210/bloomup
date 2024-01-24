@@ -25,7 +25,7 @@
         </ul>
 
         <div class="buttons">
-          <a href="form-login.html" class="loginmen">Log in</a>
+          <a href="{{ url('login') }}" class="loginmen">Log in</a>
         </div>
       </nav>
     </main>
