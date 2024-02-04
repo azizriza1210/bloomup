@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-md-7">
                             <h2 class="mt-4 text-light text-center">
-                                Login Bang
+                                Login
                             </h2>
                             <form action="{{ url('login') }}" method="POST">
                                 @csrf

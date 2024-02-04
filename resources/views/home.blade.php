@@ -7,34 +7,18 @@
     <title>BloomUp</title>
     <!---CSS File!--->
     <link rel="stylesheet" href="/css/homestyle.css" />
+    {{-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"> --}}
   </head>
 
   <body>
-    <main class="header">
-      <nav class="topnav" id="myTopnav">
-        <div class="logo">
-          <img src="/gambar/logo.svg" class="logo">
-        </div>
-        <ul>
-          <li><a href="{{ url('/') }}">Home</a></li>•
-          <li><a href="{{ url('artikel') }}">Article</a></li>•
-          <li><a href="#">Desease Detection</a></li>•
-          <li><a href="#">Plant Recomendation</a></li>
-          <li class="login"><a href="#">Login</a></li>
-          </a>
-        </ul>
-
-        <div class="buttons">
-          <a href="{{ url('login') }}" class="loginmen">Log in</a>
-        </div>
-      </nav>
-    </main>
+    @include('components.navbar')
 
     <div class="content">
       <div class="textdec">
-        <h1>Plants Care</h1>
+        <p style="color: var(--homesecol);font-size: 65px;font-weight: 500">Perawatan Tanaman</p>
         <p class="deskripsi">
-          Take care of your plants and make<br />them bloom beautifully
+          Rawatlah tanaman Anda dan buatlah <br/>tanaman Anda mekar dengan indah
+          {{-- Take care of your plants and make<br />them bloom beautifully --}}
         </p>
       </div>
       <div class="roundedbiru">
@@ -42,7 +26,6 @@
           <div class="gambar">
             <img src="/gambar/bungabesar.png" class="bungabesar">
             <img src="/gambar/bungakecil.png" class="bungakecil">
-
           </div>
         </div>
       </div>
@@ -54,7 +37,7 @@
       </div>
       <div class="link1">
         <div class="text">
-          <a href="{{ url('artikel') }}" class="seeall">See All</a>
+          <a href="{{ url('artikel') }}" class="seeall">Lihat Semua</a>
         </div>
       </div>
     </div>
