@@ -21,6 +21,7 @@ use App\Http\Controllers\DeteksiPenyakitController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/translate', [HomeController::class, 'translate']);
 Route::get('artikel', [ArtikelController::class, 'index']);
+Route::get('artikel/search', [ArtikelController::class, 'search'])->name('artikel.search');
 Route::get('desease', [HomeController::class, 'desease']);
 Route::get('recomended', [HomeController::class, 'recomended']);
 Route::get('login', [AuthController::class, 'showLoginForm']);

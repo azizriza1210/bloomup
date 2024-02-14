@@ -96,7 +96,7 @@
       var articles = document.querySelectorAll(".deskripsi_singkat");
     
       // Batasi jumlah karakter maksimal untuk setiap elemen
-      var maxLength = 66;
+      var maxLength = 60;
     
       // Loop melalui setiap elemen dan potong teks jika melebihi jumlah karakter maksimal
       articles.forEach(function(article) {

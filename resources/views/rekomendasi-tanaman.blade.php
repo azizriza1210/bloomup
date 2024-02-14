@@ -61,9 +61,21 @@
                     </div>
                   </div>
                   <div class="card d-inline-block me-1 mb-2 rounded-5" style="width: 12rem;">
-                    <img src="/gambar/jasmine 1.png" class="card-img-top w-50 mx-auto d-block" alt="...">
+                    <img src="/gambar/aglaonema.png" class="card-img-top w-50 mx-auto d-block" alt="...">
                     <div class="card-body rounded-bottom-5 text-center" style="background-color: #0D3824;">
-                      <p class="card-text fs-4" style="color: #CCFCBB;">Melati</p>
+                      <p class="card-text fs-4" style="color: #CCFCBB;">Aglaonema</p>
+                    </div>
+                  </div>
+                  <div class="card d-inline-block me-1 mb-2 rounded-5" style="width: 12rem;">
+                    <img src="/gambar/lidah_buaya.png" height="124px" class="card-img-top w-75 mx-auto d-block" alt="...">
+                    <div class="card-body rounded-bottom-5 text-center" style="background-color: #0D3824;">
+                      <p class="card-text fs-4" style="color: #CCFCBB;">Lidah Buaya</p>
+                    </div>
+                  </div>
+                  <div class="card d-inline-block me-1 mb-2 rounded-5" style="width: 12rem;">
+                    <img src="/gambar/lidah_mertua.png" height="124px" class="card-img-top w-50 mx-auto d-block" alt="...">
+                    <div class="card-body rounded-bottom-5 text-center" style="background-color: #0D3824;">
+                      <p class="card-text fs-4" style="color: #CCFCBB;">Lidah Mertua</p>
                     </div>
                   </div>
                   <div class="card d-inline-block me-1 mb-2 rounded-5" style="width: 12rem;">
@@ -73,16 +85,23 @@
                     </div>
                   </div>
                   <div class="card d-inline-block me-1 mb-2 rounded-5" style="width: 12rem;">
-                    <img src="/gambar/jasmine 1.png" class="card-img-top w-50 mx-auto d-block" alt="...">
+                    <img src="/gambar/aglaonema.png" class="card-img-top w-50 mx-auto d-block" alt="...">
                     <div class="card-body rounded-bottom-5 text-center" style="background-color: #0D3824;">
-                      <p class="card-text fs-4" style="color: #CCFCBB;">Melati</p>
+                      <p class="card-text fs-4" style="color: #CCFCBB;">Aglaonema</p>
                     </div>
                   </div>
                   <div class="card d-inline-block me-1 mb-2 rounded-5" style="width: 12rem;">
-                    <img src="/gambar/jasmine 1.png" class="card-img-top w-50 mx-auto d-block" alt="...">
+                    <img src="/gambar/lidah_buaya.png" height="124px" class="card-img-top w-75 mx-auto d-block" alt="...">
                     <div class="card-body rounded-bottom-5 text-center" style="background-color: #0D3824;">
-                      <p class="card-text fs-4" style="color: #CCFCBB;">Melati</p>
+                      <p class="card-text fs-4" style="color: #CCFCBB;">Lidah Buaya</p>
                     </div>
+                  </div>
+                  <div class="card d-inline-block me-1 mb-2 rounded-5" style="width: 12rem;">
+                    <img src="/gambar/lidah_mertua.png" height="124px" class="card-img-top w-50 mx-auto d-block" alt="...">
+                    <div class="card-body rounded-bottom-5 text-center" style="background-color: #0D3824;">
+                      <p class="card-text fs-4" style="color: #CCFCBB;">Lidah Mertua</p>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
