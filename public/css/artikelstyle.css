@@ -106,7 +106,7 @@ body{
   .wrapper {
     width: 100%;
     max-width: 31.25rem;
-    margin: 6rem auto;
+    margin: 2rem auto;
   }
   
   .label {
@@ -146,4 +146,91 @@ body{
   
   #searchQuerySubmit:hover {
     cursor: pointer;
+  }
+
+  .article {
+    position: relative;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 75vh;
+  }
+
+  .articlestext{
+    color: var(--primarycolor);
+    text-decoration: none;
+    background: #ffffff00;
+    font-size: 30px;
+    font-weight: var(--font-bold);
+    transition: 0.5s;
+    padding-bottom: 15px;;
+  }
+
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    display: flex; /* Menampilkan gambar dalam satu slide secara horizontal */
+    min-width: 60%; /* Setengah dari total lebar untuk menampilkan dua gambar */
+  }
+  
+  .carousel-item img {
+    width: 415px; /* Menyesuaikan lebar gambar */
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
+  
+  .gambar-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .gambar-gelap {
+    filter: brightness(0.5);
+  }
+  
+  .teks-di-gambar {
+    position: absolute;
+    bottom: 60px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+    color: white; /* Warna teks */
+  }
+  
+  .teks-di-gambar.tanggal {
+    bottom: 150px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+    font-size: 16px; /* Ukuran teks tanggal */
+  }
+  
+  .teks-di-gambar.judul-artikel {
+    bottom: 90px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+    font-size: 20px; /* Ukuran teks judul artikel */
+    font-weight: 520; /* Ketebalan teks judul artikel */
+  }
+  
+  .button {
+    font-weight: 410;
+    position: absolute;
+    bottom: 45px; /* Sesuaikan posisi vertikal tombol di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal tombol di dalam gambar */
+    background-color: var(--homesecol); /* Warna latar belakang tombol */
+    color: var(--primarycolor); /* Warna teks tombol */
+    border: none; /* Hilangkan border */
+    padding: 10px 20px; /* Padding tombol */
+    border-radius: 25px; /* Border radius tombol */
+    cursor: pointer; /* Kursor berubah menjadi tanda tangan saat diarahkan ke tombol */
+  }
+  
+  .button:hover {
+    background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+    color: white; /* Warna teks tombol */
   }

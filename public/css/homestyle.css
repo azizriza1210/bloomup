@@ -9,7 +9,7 @@
   --body-font: 'Mitr', sans-serif;
   --nav-font-size: 17px;
   --font-medium: 400;
-  --font-light: 200;
+  --font-light: 400;
   --font-regular: 300;
   --font-bold: 500;
 }
@@ -32,6 +32,7 @@ body{
   padding-right: 5%;
 }
 nav{
+  width: 100%;
   overflow: hidden;
   padding: 1px 0;
   display: flex;
@@ -60,6 +61,10 @@ nav ul li a:hover{
 
 .login {
     display: none;
+}
+
+.text-nav{
+  font-size: 18px;
 }
 
 .loginmen{
@@ -114,9 +119,10 @@ a{
   color: var(--primarycolor);
   text-decoration: none;
   background: #ffffff00;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: var(--font-bold);
   transition: 0.5s;
+  padding-bottom: 15px;;
 }
 .link .articles:hover{
   background: transparent;
@@ -136,7 +142,8 @@ a{
 }
 
 .seeall:hover {
-  color: #fff;
+  background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+  color: white; /* Warna teks tombol */
 }
 
 .seeall {
@@ -147,10 +154,9 @@ a{
 
 .article {
   position: relative;
+  padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  display: flex;
-  justify-content: space-between;
   min-height: 75vh;
 }
 
@@ -215,8 +221,103 @@ a{
   transition: 0.5s;
 }
 
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
 
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  display: flex; /* Menampilkan gambar dalam satu slide secara horizontal */
+  min-width: 60%; /* Setengah dari total lebar untuk menampilkan dua gambar */
+}
+
+.carousel-item img {
+  width: 415px; /* Menyesuaikan lebar gambar */
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.gambar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.gambar-gelap {
+  filter: brightness(0.5);
+}
+
+.teks-di-gambar {
+  position: absolute;
+  bottom: 60px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+  left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+  color: white; /* Warna teks */
+}
+
+.teks-di-gambar.tanggal {
+  bottom: 150px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+  left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+  font-size: 16px; /* Ukuran teks tanggal */
+}
+
+.teks-di-gambar.judul-artikel {
+  bottom: 90px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+  left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+  font-size: 20px; /* Ukuran teks judul artikel */
+  font-weight: 520; /* Ketebalan teks judul artikel */
+}
+
+.button {
+  font-weight: 410;
+  position: absolute;
+  bottom: 45px; /* Sesuaikan posisi vertikal tombol di dalam gambar */
+  left: 20px; /* Sesuaikan posisi horizontal tombol di dalam gambar */
+  background-color: var(--homesecol); /* Warna latar belakang tombol */
+  color: var(--primarycolor); /* Warna teks tombol */
+  border: none; /* Hilangkan border */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 25px; /* Border radius tombol */
+  cursor: pointer; /* Kursor berubah menjadi tanda tangan saat diarahkan ke tombol */
+}
+
+.button:hover {
+  background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+  color: white; /* Warna teks tombol */
+}
 
 
 
 /*----------Desease Detection------------*/
+
+.container-grid {
+  display: grid;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  grid-template-columns: 1fr 1fr; /* Memisahkan container menjadi dua kolom yang sama lebarnya */
+}
+
+.kolom {
+  padding: 10px;
+}
+
+.button_bawah {
+  font-weight: 410;
+  position: absolute;
+  background-color: var(--homesecol); /* Warna latar belakang tombol */
+  color: var(--primarycolor); /* Warna teks tombol */
+  border: none; /* Hilangkan border */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 25px; /* Border radius tombol */
+  cursor: pointer; /* Kursor berubah menjadi tanda tangan saat diarahkan ke tombol */
+}
+
+.button_bawah:hover {
+  background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+  color: white; /* Warna teks tombol */
+}
