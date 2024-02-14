@@ -50,10 +50,10 @@
         <div style="flex: 1; padding: 10px;">
           @foreach($news as $article)
               <div class="gambar-container">
-                <img src={{ $article->image }} alt="Image 1" class="gambar-gelap">
-                <div class="teks-di-gambar tanggal">{{ Carbon::parse($article->publishedAt)->isoFormat('DD MMM YYYY') }}</div>
-                <div class="teks-di-gambar judul-artikel deskripsi_singkat">{{ $article->title }}</div>
-                <a class="button text-decoration-none" href={{ $article->url }}>Baca Selengkapnya</a>
+                <img src={{ $article['image'] }} alt="Image 1" class="gambar-gelap">
+                <div class="teks-di-gambar tanggal">{{ Carbon::parse($article['publishedAt'])->isoFormat('DD MMM YYYY') }}</div>
+                <div class="teks-di-gambar judul-artikel deskripsi_singkat">{{ $article['title'] }}</div>
+                <a class="button text-decoration-none" href={{ $article['url'] }}>Baca Selengkapnya</a>
               </div>
           @endforeach
         </div>
@@ -85,7 +85,7 @@
             <p class="articlestext" style="font-size: 22px">
               Temukan tanaman terbaik sesuai dengan kategori yang Anda inginkan
             </p>
-            <a class="button_bawah text-decoration-none">Pergi ke Halaman</a>
+            <a class="button_bawah text-decoration-none" href="/rekomendasi">Pergi ke Halaman</a>
           </div>
         </div>
       </div>

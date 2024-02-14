@@ -19,6 +19,7 @@ use App\Http\Controllers\DeteksiPenyakitController;
 |
 */
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/translate', [HomeController::class, 'translate']);
 Route::get('artikel', [ArtikelController::class, 'index']);
 Route::get('desease', [HomeController::class, 'desease']);
 Route::get('recomended', [HomeController::class, 'recomended']);
