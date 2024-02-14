@@ -14,7 +14,7 @@ class ArtikelController extends Controller
         $news = $response->json();
         // dd($news);
         $newsdata = $news['articles'];
-        return view('/tes_artikel',compact('newsdata'));
+        return view('artikel');
 
     }
 }
